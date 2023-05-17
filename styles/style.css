@@ -1,7 +1,7 @@
 :root{
     --mainFont: 'Oswald', sans-serif;
     --black: #000000;
-    --white: #ffffff;
+    --white: #f4ecec;
     --darkGrey: #262626;
 }
 
@@ -73,6 +73,10 @@ ul {
 }
 
 /* Showcase */
+hr {
+    margin: 1rem 0;
+}
+
 .showcase {
     width: 100%;
     background-color: blueviolet;
@@ -82,14 +86,18 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    padding-bottom: 5rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
 }
 
-.showcase .btn {
-    margin-bottom: 5rem;
+
+.showcase h2,
+.showcase p {
+    margin-bottom: 1rem;
 }
 
 /* Button */
@@ -109,4 +117,68 @@ ul {
 
 .btn:hover {
     opacity: 0.875;
+}
+
+/* News Cards */
+
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2.5rem;
+    margin: 1rem 0;
+}
+
+.news-cards img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.news-cards h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.news-cards a {
+    padding: 1rem 0;
+    color: var(--white);
+    display: inline-block;
+}
+
+.news-cards a:hover {
+    text-decoration: underline;
+}
+
+/* Cards Banner One */
+.cards-banner-one {
+    width: 100%;
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/img/crypto-purple.jpg');
+    margin-bottom: 4rem;
+}
+
+.cards-banner-one .content {
+    width: 40%;
+    padding: 4rem 0 0 3rem;
+}
+
+.cards-banner-one p,
+.cards-banner-one h2 {
+    margin: 1rem 0 2rem 0;
+}
+
+/* Cards Banner Two */
+
+.cards-banner-two {
+    width: 100%;
+    height: 35rem;
+    background: url('/img/image-five.jpg') no-repeat center center/cover;
+}
+
+.cards-banner-two .content {
+    width: 50%;
+    padding: 8rem 0 0 3rem;
 }
